@@ -31,9 +31,6 @@ flowchart TD
     N --> DIR
 
     DIR --> HTML
-    DIR --> CSS
-    DIR --> JS
-    DIR --> IMG
 
     CF -. Origin Request .-> EC2
 ```
