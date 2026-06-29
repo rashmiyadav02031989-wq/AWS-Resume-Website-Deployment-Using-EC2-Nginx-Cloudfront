@@ -100,3 +100,29 @@ Accessed website using CloudFront domain URL.
 -Integrated CloudFront for CDN + HTTPS  
 -Improved website performance and security  
 
+## Skills Demonstrated
+-AWS EC2 & Security Groups  
+-Nginx Web Server Configuration  
+-CloudFront CDN Setup  
+-Linux Server Management  
+-Static Website Hosting  
+
+## Repository Structure: 
+
+```text
+ 
+AWS-Resume-Website-Deployment-Using-EC2-Nginx-Cloudfront/
+│
+├── index.html
+│
+├── screenshots/
+│   ├── ec2-instance.png
+│   ├── security-group.png
+│   ├── ssh-connection.png
+│   ├── nginx-running.png
+│   ├── ec2-website.png
+│   ├── cloudfront-dashboard.png
+│   └── cloudfront-website.png
+── README.md
+
+
