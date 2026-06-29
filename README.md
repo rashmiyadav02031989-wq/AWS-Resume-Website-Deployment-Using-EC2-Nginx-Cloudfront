@@ -45,8 +45,22 @@ flowchart TD
 
 ## Deployment Steps
 **Step 1:** Launch EC2 instance. 
-**Step 2:** Connect to EC2:  
-ssh -i key.pem ec2-user@<EC2-PUBLIC-IP>
-   ```bash
-   sudo dnf update
-   sudo dnf install nginx -y
+Create instance (Amazon Linux 2/2023)  
+Allow HTTP (80) and SSH (22) in Security Group  
+**Step 2:** Install & Start Nginx
+Installed Nginx on Amazon Linux using yum.
+Started and enabled Nginx service.  
+**Step 3:** Deploy Website Files
+Navigated to /usr/share/nginx/html/ directory.
+Uploaded index.html, CSS, JS, and assets.
+Restarted Nginx service.  
+**Step 4:** Test EC2 Deployment
+Accessed website using EC2 Public IP.
+Verified Nginx default server was serving custom site.
+**Step 5:** Configure CloudFront
+Created CloudFront distribution.
+Selected EC2 Public IP as custom origin.
+Enabled HTTPS redirect and caching.
+**Step 6:** Deploy & Access Website
+Waited for CloudFront deployment to complete.
+Accessed website using CloudFront domain URL.
