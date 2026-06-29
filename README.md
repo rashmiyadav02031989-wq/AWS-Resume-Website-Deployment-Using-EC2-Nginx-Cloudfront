@@ -75,8 +75,8 @@ Accessed website using CloudFront domain URL.
 ## Screenshots:    
 
 
-SSH Connection to EC2
-Nginx Service Running
+
+
 Website files in /usr/share/nginx/html/
 Website via EC2 Public IP
 CloudFront Distribution Dashboard
@@ -89,13 +89,13 @@ Final Website via CloudFront URL
 
 ![Security Group Configuration](security-group-configuration.PNG)
 
-### Website Homepage
+### Nginx Service Running
 
-![Website Homepage](website-homepage.PNG)
+![Nginx Service Running](nginx-service-running.PNG)
 
-### Website Homepage
+### SSH Connection to EC2
 
-![Website Homepage](website-homepage.PNG)
+![SSH Connection to EC2](SSH-connection-to-EC2.PNG)
 
 ### Website Homepage
 
