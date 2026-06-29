@@ -43,7 +43,7 @@ flowchart TD
 - Enabled HTTPS access via CloudFront
 - Secure and scalable hosting setup
 
-## Deployment Steps
+## Implementation Steps
 **Step 1:** Launch EC2 instance.   
 Create instance (Amazon Linux 2/2023)    
 Allow HTTP (80) and SSH (22) in Security Group    
@@ -52,15 +52,22 @@ Installed Nginx on Amazon Linux using dnf.
 Started and enabled Nginx service.    
 **Step 3:** Deploy Website Files  
 Navigated to /usr/share/nginx/html/ directory.  
-Uploaded index.html, CSS, JS, and assets.  
+Uploaded index.html.    
 Restarted Nginx service.    
 **Step 4:** Test EC2 Deployment  
 Accessed website using EC2 Public IP.  
 Verified Nginx default server was serving custom site.  
 **Step 5:** Configure CloudFront  
 Created CloudFront distribution.  
-Selected EC2 Public IP as custom origin.  
+Selected EC2 Public DNS as custom origin.  
 Enabled HTTPS redirect and caching.  
 **Step 6:** Deploy & Access Website  
 Waited for CloudFront deployment to complete.  
 Accessed website using CloudFront domain URL.  
+
+## Security Best Practices  
+-Restrict EC2 Security Group (SSH only from your IP, limit HTTP access)  
+-Use CloudFront as the main entry point, avoid direct EC2 access  
+-Disable Nginx directory listing and hide server version  
+-Use SSH key-based authentication only, protect .pem file  
+-Enable HTTPS via CloudFront and force HTTP → HTTPS redirect  
