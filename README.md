@@ -9,8 +9,37 @@ This project demonstrates hosting a personal resume website using AWS EC2 with N
 - AWS CloudFront (CDN)
 - HTML, CSS (Static Resume Website)
 
-## 📌 Architecture
-User → CloudFront → EC2 (Nginx Server) → Resume Website
+## Architecture
+```mermaid
+flowchart TD
+
+    U[User Browser]
+
+    CF[CloudFront Distribution<br/>CDN + HTTPS]
+
+    EC2[EC2 Instance<br/>Ubuntu Server]
+
+    NGINX[Nginx Web Server<br/>Serves Static Resume]
+
+    FS[File System<br/>/var/www/html<br/>index.html + assets]
+
+    SG[Security Group<br/>Allow HTTP/HTTPS]
+
+    U --> CF
+    CF --> EC2
+    EC2 --> NGINX
+    NGINX --> FS
+
+    EC2 -. Protected by .-> SG
+
+    FS -. stores .-> HTML[index.html]
+    FS -. stores .-> CSS[style.css]
+    FS -. stores .-> IMG[images/assets]
+
+    CF -. caches .-> EC2
+```
+
+
 
 ## ⚙️ Features
 - Deployed static resume website on EC2
