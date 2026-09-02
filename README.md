@@ -120,7 +120,7 @@ AWS-Resume-Website-Deployment-Using-EC2-Nginx-Cloudfront/
 │   ├── ec2-running-status.jpeg
 │   ├── ec2-security-group.jpeg
 │   ├── nginx-service-running.png
-│   ├── website-homepage.png
+│   ├── screenshot_resume_website.jpeg
 ── README.md
 
 
