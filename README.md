@@ -92,7 +92,7 @@ Accessed website using CloudFront domain URL.
 
 ### Website Homepage
 
-![Website Homepage](screenshots/website-homepage.png)  
+![Website Homepage](screenshots/screenshot_resume_website.jpeg)  
 
 ## Project Outcome
 -Successfully hosted my resume on EC2  
